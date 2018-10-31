@@ -54,6 +54,10 @@ input.input-material ~ label.active {
     color: #0277BD;
 }
 
+label.form-control-label {
+    color: #212121;
+}
+
 .form-control:focus {
     color: #0277BD;
     background-color: #fff;
