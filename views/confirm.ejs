@@ -11,7 +11,7 @@
               <form role="form" id="client-on-board" autocomplete="off">
                 <div class="row">
                   <div class="col-lg-12">
-                    <h2>Barbara Cherlin</h2>
+                    <h2>Confirm your booking</h2>
                 <p>Please fill in the information below to confirm your booking with us</p>
                 <br>
                 <p><strong>Details</strong></p>
@@ -372,6 +372,8 @@
         <div class="col-6 col-md-3 sidebar-offcanvas" id="sidebarConfirm">
           <h5>Booking Summary</h5>
           <hr>
+          <span class="confirmBooking">Lead Name</span>
+          <p>Barbara Cherlin</p>
           <span class="confirmBooking">Arrival Date</span>
           <p>28 July, 2019</p>
           <span class="confirmBooking">Departure Date</span>
@@ -435,7 +437,32 @@ Pay the full amout now and save 5% - 170.888 ISK
 Pay 30% Deposit now - 83.000 ISK of 170.888 ISK
 </label>
 </div>
+</form>
 <br>
+<form id="mainPaymentForm" action="https://test.borgun.is/SecurePay/default.aspx" method="post">
+   <input type="hidden" name="merchantid" value="9275444" /><br>
+  <input type="hidden" name="paymentgatewayid" value="16" /><br>
+   <input type="hidden" size=100 name="checkhash" value="628236a248fc6ca8358924287651273de827d78c3e3ffb281bce4a86d4b17edd" /><br>
+   <input type="hidden" name="orderid" value="ORDER1230001" /><br>
+   <input type="hidden" name="currency" value="ISK" /><br>
+   <input type="hidden" name="language" value="EN" /><br>
+   <input type="hidden" name="buyername" value="Agnar Agnarsson" /><br>
+   <input type="hidden" name="buyeremail" value="test@borgun.is" /><br>
+   <input type="hidden" size=100 name="returnurlsuccess" value="http://borgun.is/ReturnPageSuccess" /><br>
+   <input type="hidden" size=100 name="returnurlsuccessserver" value="http://borgun.is/ReturnPageSuccessServer" /><br>
+   <input type="hidden" size=100 name="returnurlcancel" value="http://borgun.is/ReturnPageCancel.aspx" /><br>
+   <input type="hidden" size=100 name="returnurlerror" value="http://borgun.is/ReturnUrlError.aspx" /><br>
+   <input type="hidden" name="itemdescription_0" value="Dekk" /><br>
+   <input type="hidden" name="itemcount_0" value="1" /><br>
+   <input type="hidden" name="itemunitamount_0" value="800.00" /><br>
+   <input type="hidden" name="itemamount_0" value="800.00" /><br>
+   <input type="hidden" name="merchantlogo" value="https://deluxeiceland.is/wp-content/uploads/2018/05/Logo-2.png">
+   <input type="hidden" name="amount" value="800.00" /><br>
+   <input type="hidden" name="pagetype " value="0" /><br>
+   <input type="hidden" name="skipreceiptpage " value="0" /><br>
+   <input type="hidden" name="merchantemail" value="info@deluxeiceland.is" /><br>
+   <input type="submit" name="PostButton" />
+ </form>
       </div>
       <div class="modal-footer">
                     <p class="float-left paymentTotal">780.000 ISK</p>
