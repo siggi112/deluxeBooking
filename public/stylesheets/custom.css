@@ -182,3 +182,8 @@ p.float-left.paymentTotal {
     margin: 0;
     margin-right: 10px;
 }
+
+i.far.fa-times-circle.not-found {
+    font-size: 75px;
+    margin-bottom: 50px;
+}
